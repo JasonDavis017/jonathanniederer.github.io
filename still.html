@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Still - Jonathan Niederer</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <span class="font-semibold text-xl tracking-tight text-gray-800">Jonathan Niederer</span>
+        </div>
+        <div id="mobile-menu-button" class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:absolute lg:right-10 hidden">
+          <div class="text-sm lg:flex-grow">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:underline mr-4">
+              Video
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:underline mr-4">
+              Still
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:underline">
+              Look Books
+            </a>
+          </div>
+        </div>
+      </nav> -->
+
+      <nav x-data="{ open: false }" class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <a href="index.html">
+            <span class="font-semibold text-xl tracking-tight text-gray-800">Jonathan Niederer</span>
+        </a>
+        </div>
+        <button id="mobile-menu-button" class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white lg:hidden" @click="open = !open">
+          <span class="sr-only">Open main menu</span>
+          <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+              <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+              <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+          </div>
+      </button>
+        <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:absolute lg:right-10 hidden">
+          <div class="text-sm lg:flex-grow">
+            <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 mr-4">
+              Video
+            </a>
+            <a href="still.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 mr-4 underline">
+              Still
+            </a>
+            <a href="look-books.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200">
+              Look Books
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="">
+        <div class="flex">
+          <img class="mx-auto" src="still1.png">
+        </div>
+      
+        <div class="flex">
+          <img class="mx-auto" src="still2.png">
+        </div>
+        <div class="flex">
+          <img class="mx-auto" src="still3.png">
+        </div>
+        <div class="flex">
+          <img class="mx-auto" src="page+1.png">
+        </div>
+        <div class="flex">
+          <img class="mx-auto" src="page+2.png">
+        </div>
+        <div class="flex">
+          <img class="mx-auto" src="page+3.png">
+        </div>
+      </div>
+
+      <script src="index.js"></script>      
+      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+      
+</body>
+</html>
