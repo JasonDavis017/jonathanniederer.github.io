@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Look Books - Jonathan Niederer</title>
+    <title>RIP Skittles - Jonathan Niederer</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
- <!-- Header --> 
-    <nav x-data="{ open: false }" class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+<!-- Header -->
+      <nav x-data="{ open: false }" class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <a href="index.html">
-                <span class="font-semibold text-xl tracking-tight text-gray-800">Jonathan Niederer</span>
-            </a>
+          <a href="../index.html">
+            <span class="font-semibold text-xl tracking-tight text-gray-800">Jonathan Niederer</span>
+        </a>
         </div>
         <button id="mobile-menu-button" class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white lg:hidden" @click="open = !open">
           <span class="sr-only">Open main menu</span>
@@ -26,13 +26,13 @@
       </button>
         <div id="menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:absolute lg:right-10 hidden">
           <div class="text-sm lg:flex-grow">
-            <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 mr-4">
+            <a href="../index.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
               Shorts
             </a>
-            <a href="photos.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 mr-4">
+            <a href="../photos.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
               Photos
             </a>
-            <a href="look-books.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 underline">
+            <a href="../look-books.html" class="block mt-4 lg:inline-block lg:mt-0">
               Look Books
             </a>
           </div>
@@ -40,27 +40,31 @@
       </nav>
 
 <!-- Main Content -->
-      <div class="">
-        <a href="Prada.pdf">
-            <div class="flex pb-2">
-                <img class="md:max-h-screen mx-auto" src="prada.png">
-            </div>
-        </a>
-        <a href="TDC.pdf">
-            <div class="flex pb-2">
-                <img class="md:max-h-screen mx-auto" src="tdc.png">
-            </div>
-        </a>
-        <a href="Advil.pdf">
-            <div class="flex pb-2">
-                <img class="md:max-h-screen mx-auto" src="advil.png">
-            </div>
-        </a>
-      </div>
+<div class="md:flex pr-8 pl-8">
+<div class="md:w-3/4">
+	<h1 class="text-2xl pb-1">RIP Skittles</h1>
+	<div class="relative h-0 overflow-hidden max-w-full w-full" style="padding-bottom: 56.25%">
+		<iframe src="https://player.vimeo.com/video/683109403?h=9c9cdfbec2" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full"></iframe>
+	</div>
+</div> 
+<div class="md:-1/4"></div>
+</div>
+
+<div class="pr-8 pl-8 pb-4">
+    <div class="">
+        <br>
+        <p>Ben reflects on the passing of his cat as he attempts to put the remains out to sea.</p>
+        <br>
+        <p>Written/Directed/Produced/Edited by: Jonathan Niederer</p>
+        <p>Original Music by: Chase Hawley </p>
+        <p>Camera Operator: Nathaniel Thien-Nhan Dam </p>
+        <p>Starring: Jonathan Niederer</p>
+    </div>
+</div>
 
 <!-- Scripts -->
       <script src="index.js"></script>      
       <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
+      
 </body>
 </html>
